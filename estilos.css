@@ -1,0 +1,391 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+nav {
+  background-color: transparent;
+  color: #fff;
+  width: 100%;
+  height: 60px;
+  padding: 0 ;
+  overflow: hidden;
+  margin-top : 1rem;
+  margin-left: 1rem;
+}
+
+.derecha-nav{
+  float: right;
+}
+
+.logo {
+  font-size: 24px;
+  margin-right: 1rem;
+  float: left;
+}
+
+.search input {
+  
+  background-color: rgb(30, 30, 30);
+  padding: 5px;
+  width: 200px;
+  border-radius: 5px;
+  font-size: 16px;
+  border-radius: 4px;
+  padding: 6px;
+  font-size: 16px;
+  width: 200px;
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+  
+}
+button[type="submit"] {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: transparent;
+  border: none;
+}
+
+.fa-search {
+  
+  font-size: 20px;
+}
+.material-symbols-outlined{
+  margin-top: 4px;
+}
+
+.search{
+  
+  display: flex;
+  justify-self: right;
+  position: relative;
+  border: 1px solid rgb(252, 252, 252);
+  float: right;
+  border-radius: 4px;
+   
+}
+.genres{
+  margin-left: 5rem;
+  position: absolute;
+}
+
+.genres ul {
+  display: none;
+  position: absolute;
+  top: 1%;
+  left: 0;
+  z-index: 1;
+  background-color:  rgba(0,0,0,0.5);
+  padding: 20px;
+  list-style: none;
+  border-radius: 5px;
+  color: red;  
+}
+
+.genres ul li {
+  margin-bottom: 10px;
+}
+
+.genres ul li a {
+  color: red;
+  text-decoration: none;
+}
+
+.genres:hover ul {
+  display: block;
+}
+
+
+.container{
+  text-align: center;
+  font-size: 16px;
+  width: 90vw;
+  max-width: 37.5em;
+  padding: 3em 1.8em;
+  background-color: #474b52;
+  background: linear-gradient(23);
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  border-radius: 0.6em;
+  box-shadow: 1.2em 2em 3em rgba(0, 0, 0, 0.2);
+}
+
+.search-container{
+  display: grid;
+  grid-template-columns: 9fr 3fr;
+  gap: 1.2em;
+}
+
+.search-container input, .search-container button{
+  font-size: 0.9em;
+  outline: none;
+  border-radius: 0.3em;
+}
+
+.search-container input{
+  background-color: transparent;
+  border: 1px solid #a0a0a0;
+  color: #fff;
+  padding: 0.7em;
+}
+
+.search-container input:focus{
+  border-color: #fff;
+}
+
+.search-container button{
+  background-color: #ffb92a;
+  border: none;
+  cursor: pointer;
+}
+
+
+
+
+#result{
+  color: #fff;
+}
+
+.info{
+  position: relative;
+  display: grid;
+  grid-template-columns: 4fr 8fr;
+  margin-top: 1.2em;
+}
+
+.poster{
+  width: 100%;
+}
+
+h2{
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+}
+
+.rating{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6em;
+  margin: 0.6em 0 0.9em 0;
+}
+
+.rating img{
+  width: 1.2em;
+}
+
+.rating h4{
+  display: inline-block;
+  font-size: 1.1em;
+  font-weight: 500;
+}
+
+.details{
+  display: flex;
+  font-size: 0.95em;
+  gap: 1em;
+  justify-content: center;
+  color: #a0a0a0;
+  margin: 0.6em 0;
+  font-weight: 300;
+}
+
+.genre{
+  display: flex;
+  justify-content: space-around;
+}
+
+.genre div{
+  border: 1px solid #a0a0a0;
+  font-size: 0.75em;
+  padding: 0.4em 1.6em;
+  border-radius: 0.4em;
+  font-weight: 300;
+}
+
+h3{
+  font-weight: 500;
+  margin-top: 1.2em;
+}
+
+p{
+  font-size: 0.9em;
+  font-weight: 300;
+  line-height: 1.8em;
+  text-align: justify;
+  color: #a0a0a0;
+}
+
+.msg{
+  text-align: center;
+}
+
+
+@media screen and (max-width: 600px) {
+  .container{
+      font-size: 14px;
+  }
+  .poster{
+      margin: auto;
+      width: auto;
+      max-height: 10.8em;
+  }
+
+  .info{
+      grid-template-columns: 1fr;
+  }
+
+}
+
+.generos{
+  display: inline-flex ;
+  width: 100%;
+  justify-content: space-between;
+}
+.btngenero{
+  width: 6rem;
+  height: 2rem;
+  margin-bottom: 1rem;
+  background-color: #ffb92a;
+  border-radius: 1rem;
+  color: black;
+  box-shadow: #fff;
+  
+  
+}
+
+
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	background: #e0e0e0;
+	background-color: rgb(30, 30, 30);
+	color: #ffffff;
+}
+
+.pelicula .añoPeliculaa{
+  float: left;
+}
+
+.contenedor {
+	width: 90%;
+	max-width: 1000px;
+	margin: 40px auto 100px auto;
+
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 30px;
+}
+.pelicula{
+  position: relative;
+  display: inline-block;
+}
+
+.pelicula:hover .tooltip {
+  visibility: visible;
+}
+.pelicula .añoPelicula{
+  color: yellow;
+  float: right;
+}
+
+
+.tooltip {
+  visibility: hidden;
+  width: 100%;
+  height: 86%;
+	max-width: 1000px;
+	margin: 40px auto 100px auto;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  top: 0%;
+  left: 145%;
+  margin-left: -100px;
+  margin-top:0px;
+  font-size: 10px;
+}
+
+.contenedor .pelicula {
+	text-align: center;
+}
+
+.contenedor .pelicula .titulo {
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.contenedor .pelicula .poster {
+	width: 100%;
+	margin-bottom: 10px;
+	border-radius: 15px;
+}
+
+.paginacion {
+	position: fixed;
+	bottom: 0;
+	background: #100a1f;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	padding: 10px;
+}
+
+.paginacion button {
+	cursor: pointer;
+	border: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	height: 50px;
+	width: 200px;
+	background: #ff0000;
+	color: #fff;
+	border-radius: 100px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	transition: .3s ease all;
+}
+
+.paginacion button:hover {
+  
+	background: rgb(119, 32, 32);
+}
+
+
+.btnbuscar{
+  background: #ff0000;
+  border-radius: 0.5rem;
+
+  color: #fff;
+}
+
+.btnbuscar::hover{
+  background: rgb(119, 32, 32);
+}
+
+.btnTrailer{
+
+background: red;
+padding: 1rem;
+height: 50px;
+width: 100px;
+border-radius:4rem;
+color: #fff;
+}
+
+.btnTrailer :hover{
+  background: rgb(119, 32, 32);
+}

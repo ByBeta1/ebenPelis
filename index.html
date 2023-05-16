@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="estilos.css">
+
+
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+	<title>Sitio de películas</title>
+</head>
+<body>
+
+	<nav>
+		<a href="#">
+		<div class="logo">
+			logo 
+				</div>
+	</a>
+		<div class="genres">
+		  <h1>Géneros</h1>
+		  <ul>
+			
+			<li><a href="#" id="accion">Acción</a></li>
+			<li><a href="#" id="comedia">Comedia</a></li>
+			<li><a href="#" id="aventura">Aventura</a></li>
+			
+		  </ul>
+		</div>
+		
+		  <div class="search">
+			<span class="material-symbols-outlined">
+			  Search 
+			  </span>
+			<input type="text" id="movie-name" placeholder="Buscar Pelicula"  >
+			<button class="btnbuscar" id="search-btn">Buscar</button>
+		</div>
+	  </nav>
+	  <div class="vista">
+		<div class="container">
+			<div style="width:50%; margin:0 auto;">
+				<!-- contenido centrado -->
+			  </div>
+			<div id="result"></div>
+		</div> 
+		<div id="datos-api"></div>
+	<div class="contenedor" id="contenedor"></div>
+</div>
+	<div class="paginacion">
+		<button id="btnAnterior">Anterior</button>
+		<button id="btnSiguiente">Siguiente</button>
+	</div>
+	<script src="app.js"></script>
+	<script src="key.js"></script>
+</body>
+</html>
